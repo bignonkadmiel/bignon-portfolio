@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +7,9 @@
 }
 
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
+    --primary-color: #0052CC;
+    --secondary-color: #7B2CBF;
+    --gradient: linear-gradient(135deg, #0052CC 0%, #7B2CBF 100%);
     --dark-bg: #0f172a;
     --light-bg: #f8fafc;
     --text-dark: #1e293b;
@@ -21,7 +24,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: #fff;
@@ -52,7 +55,8 @@ body {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    font-family: 'Algerian', serif;
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -68,6 +72,7 @@ body {
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 500;
+    font-family: 'Times New Roman', serif;
     transition: color 0.3s ease;
 }
 
@@ -92,7 +97,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 100px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--gradient);
     color: white;
 }
 
@@ -106,6 +111,7 @@ body {
 .hero-title {
     font-size: 3.5rem;
     font-weight: 800;
+    font-family: 'Algerian', serif;
     margin-bottom: 1rem;
     line-height: 1.2;
 }
@@ -114,6 +120,7 @@ body {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     opacity: 0.9;
+    font-family: 'Times New Roman', serif;
 }
 
 .hero-description {
@@ -121,6 +128,7 @@ body {
     margin-bottom: 2rem;
     opacity: 0.85;
     max-width: 500px;
+    font-family: 'Times New Roman', serif;
 }
 
 .hero-buttons {
@@ -138,6 +146,7 @@ body {
     border: none;
     cursor: pointer;
     font-size: 1rem;
+    font-family: 'Times New Roman', serif;
 }
 
 .btn-primary {
@@ -177,6 +186,7 @@ body {
 .section-title {
     font-size: 2.5rem;
     font-weight: 800;
+    font-family: 'Algerian', serif;
     text-align: center;
     margin-bottom: 3rem;
     color: var(--text-dark);
@@ -202,6 +212,7 @@ section {
     color: var(--text-light);
     font-size: 1.1rem;
     line-height: 1.8;
+    font-family: 'Times New Roman', serif;
 }
 
 .about-stats {
@@ -220,12 +231,17 @@ section {
 
 .stat h3 {
     font-size: 2.5rem;
-    color: var(--primary-color);
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 0.5rem;
+    font-family: 'Algerian', serif;
 }
 
 .stat p {
     color: var(--text-light);
+    font-family: 'Times New Roman', serif;
 }
 
 /* Projects Section */
@@ -255,7 +271,7 @@ section {
 .project-image {
     width: 100%;
     height: 200px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: var(--gradient);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,6 +283,7 @@ section {
     padding: 1.5rem 1.5rem 0.5rem;
     color: var(--text-dark);
     font-size: 1.3rem;
+    font-family: 'Times New Roman', serif;
 }
 
 .project-card p {
@@ -274,6 +291,7 @@ section {
     color: var(--text-light);
     font-size: 0.95rem;
     line-height: 1.6;
+    font-family: 'Times New Roman', serif;
 }
 
 .project-tags {
@@ -290,6 +308,7 @@ section {
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
+    font-family: 'Times New Roman', serif;
 }
 
 /* Skills Section */
@@ -317,6 +336,7 @@ section {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-family: 'Times New Roman', serif;
 }
 
 .skill-category ul {
@@ -328,10 +348,156 @@ section {
     color: var(--text-light);
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 0.7rem;
+    font-family: 'Times New Roman', serif;
 }
 
 .skill-category li:last-child {
     border-bottom: none;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: white;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-5px);
+}
+
+.stars {
+    color: #FFD700;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.testimonial-text {
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-family: 'Times New Roman', serif;
+    line-height: 1.8;
+}
+
+.testimonial-author {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gradient);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.testimonial-author h4 {
+    color: var(--text-dark);
+    margin-bottom: 0.2rem;
+    font-family: 'Times New Roman', serif;
+}
+
+.testimonial-author p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Blog Section */
+.blog {
+    background: var(--light-bg);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.blog-image {
+    width: 100%;
+    height: 200px;
+    background: var(--gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+}
+
+.blog-content {
+    padding: 2rem;
+}
+
+.blog-date {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-family: 'Times New Roman', serif;
+}
+
+.blog-card h3 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', serif;
+}
+
+.blog-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-family: 'Times New Roman', serif;
+    line-height: 1.8;
+}
+
+.read-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    font-family: 'Times New Roman', serif;
+}
+
+.read-more:hover {
+    gap: 1rem;
 }
 
 /* Contact Section */
@@ -344,6 +510,7 @@ section {
     font-size: 1.2rem;
     color: var(--text-light);
     margin-bottom: 3rem;
+    font-family: 'Times New Roman', serif;
 }
 
 .contact-content {
@@ -372,10 +539,12 @@ section {
 .contact-item h4 {
     color: var(--text-dark);
     margin-bottom: 0.5rem;
+    font-family: 'Times New Roman', serif;
 }
 
 .contact-item p {
     color: var(--text-light);
+    font-family: 'Times New Roman', serif;
 }
 
 .contact-item a {
@@ -395,7 +564,7 @@ section {
     padding: 12px 15px;
     border: 2px solid var(--border-color);
     border-radius: 10px;
-    font-family: inherit;
+    font-family: 'Times New Roman', serif;
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
@@ -420,6 +589,10 @@ section {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+}
+
+.footer-content p {
+    font-family: 'Times New Roman', serif;
 }
 
 .social-links {
@@ -474,6 +647,14 @@ section {
     }
 
     .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-grid {
         grid-template-columns: 1fr;
     }
 

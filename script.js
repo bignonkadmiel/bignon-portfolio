@@ -75,8 +75,8 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Observe project cards and skill categories
-document.querySelectorAll('.project-card, .skill-category, .stat').forEach(el => {
+// Observe project cards, testimonials, blog cards and skill categories
+document.querySelectorAll('.project-card, .skill-category, .stat, .testimonial-card, .blog-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -113,5 +113,5 @@ window.addEventListener('scroll', () => {
 });
 
 // Add some interactive features
-console.log('%cBienvenue sur mon portfolio!', 'font-size: 20px; color: #6366f1; font-weight: bold;');
+console.log('%cBienvenue sur mon portfolio!', 'font-size: 20px; color: #0052CC; font-weight: bold;');
 console.log('Pour me contacter, utilisez le formulaire de contact ci-dessous ou envoyez-moi un email directement.');
