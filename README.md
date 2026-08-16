@@ -5,8 +5,8 @@ Bienvenue sur mon portfolio professionnel! 🎨
 ## À propos
 
 Je suis un créateur numérique passionné avec une expertise en :
-- **Design** : UI/UX, Branding, Graphic Design
-- **Intelligence Artificielle** : Machine Learning, NLP, Chatbots, GenAI
+- **Design** : UI/UX, Branding, Graphic Design, Marketing digital,Copywriting 
+- **Intelligence Artificielle** : Chatbots, GenAI
 - **Montage Vidéo** : Édition professionnelle, Motion Graphics, VFX
 
 ## Structure du Projet
